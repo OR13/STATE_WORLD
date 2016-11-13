@@ -1,18 +1,32 @@
-# Phaser TypeScript Webpack Boilerplate
+# STATE_WORLD
 
-Start developing your own HTML5 games using [TypeScript](https://www.typescriptlang.org/) and [Phaser.io](http://phaser.io/)
+#### Webpack, TypeScript, Phaser, IPFS, Ethereum, World Building Game
 
-## Requirements
+* `webpack`
+* `webpack-dev-server` for development & hot module reloading
+* `babel` for TypeScript transpiling, including stage 0 support
+* `tslint` for code hygiene
+* `mocha`, `chai` & `sinon` for testing
+* `istanbul` for code coverage
+* `phaser`, `pixi.js` and `p2` for the game engine
+* `phaser-debug` for improved debugging
+* `phaser-glsl-loader` to simplify shader loading
+* `typings` for type definitions
 
-* Node.JS
-* NPM
+## Usage
 
-You can install Node by downloading on the site [https://nodejs.org/en/](https://nodejs.org/en/)
+| Command                 | Description                                 |
+|-------------------------|---------------------------------------------|
+| `npm start`             | Start a dev server.                         |
+| `npm run server`        | Start a dev server.                         |
+| `npm run server:reload` | Start a dev server with HMR enabled.        |
+| `npm run build`         | Build the production version of the app.    |
+| `npm run build:prod`    | Build the production version of the app.    |
+| `npm run build:dev`     | Build the developement version of the app.  |
+| `npm run test`          | Run the tests.                              |
+| `npm run test:watch`    | Run the tests & watch for changes.          |
+| `npm run test:coverage` | Run the test coverage analysis.             |
+| `npm run lint`          | Lint the code.                              |
 
-## How to
-
-Clone this project in any directory and type `npm install` to install all dependencies and to run the project just type `npm start`. It will start to listen at port 9000, open your favorite web browser at address [http://localhost:9000](http://localhost:9000) and start to code your game on `src` directory.
-
-And to distribute your game just run `npm build` it will create the `dist` directory with all necessary files, ready to push to any HTTP server.
-
-### License MIT
+Hot Module Replacement doesn't really work with Phaser, so that isn't enabled by default when
+starting a dev server.
