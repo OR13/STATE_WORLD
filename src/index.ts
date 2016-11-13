@@ -774,7 +774,7 @@ class SimpleGame {
     this.game.input.update();
 
     // if (this.cursors.down.isDown) {
-      
+
     // }
 
     // if (this.cursors.up.isDown)
