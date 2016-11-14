@@ -13,10 +13,9 @@ class Main extends Phaser.State {
         logo.anchor.set(0.5);
 
         setTimeout(() => {
-            this.game.state.start('tile');
+            this.game.state.start('map');
         }, 3 * 1000)
     }
 }
 
 export default Main;
-

@@ -4,6 +4,7 @@ import Boot from './states/Boot';
 import Loader from './states/Loader';
 import Main from './states/Main';
 import TileBuilder from './states/TileBuilder';
+import TileMap from './states/TileMap';
 import './Game.css';
 
 class Game extends Phaser.Game {
@@ -14,6 +15,7 @@ class Game extends Phaser.Game {
         this.state.add('loader', Loader, false);
         this.state.add('main', Main, false);
         this.state.add('tile', TileBuilder, false);
+        this.state.add('map', TileMap, false);
         this.state.start('boot');
     }
 }

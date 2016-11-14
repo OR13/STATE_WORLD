@@ -91,7 +91,7 @@ module.exports = {
         fs: 'empty'
     },
 
-    postcss: function(webpack) {
-        return [ atImport({ addDependencyTo: webpack }), precss, autoprefixer ];
+    postcss: function (webpack) {
+        return [atImport({ addDependencyTo: webpack }), precss, autoprefixer];
     }
 };
