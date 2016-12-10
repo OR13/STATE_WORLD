@@ -57,6 +57,7 @@ var colorIndex;
  * The TileBuilder state is where the player can create or edit a tile.
  */
 
+
 class TileBuilder extends Phaser.State {
 
     public create(): void {
@@ -76,7 +77,7 @@ class TileBuilder extends Phaser.State {
         this.resetData();
         this.setColor(2, undefined);
 
-   
+
 
     }
 
@@ -178,18 +179,7 @@ class TileBuilder extends Phaser.State {
             'DDDDDDDDDD'
         ];
 
-        var frame0 = [
-            '...66...',
-            '...AAA..',
-            '6BBAAAA.',
-            '.BBBAAAA',
-            'CDDBBAAA',
-            'CCDDBFFF',
-            'CCCCFFFF',
-            '...FFFFF'
-        ];
-        // this.this.game.create.texture('yourKey', frame0, 6, 6, 0);
-
+    
         this.game.create.texture('arrow', arrow, 2);
         this.game.create.texture('plus', plus, 3);
         this.game.create.texture('minus', minus, 3);
