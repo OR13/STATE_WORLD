@@ -26,7 +26,6 @@ class TileMap extends Phaser.State {
 
     public custSprite;
 
-
     public preload(): void {
 
         this.game.load.tilemap('map', 'assets/tilemaps/maps/state_world_zero.json', null, Phaser.Tilemap.TILED_JSON);
@@ -44,7 +43,11 @@ class TileMap extends Phaser.State {
 
         this.map = this.game.add.tilemap('map');
 
-        var customTile = [
+        var g: any = this.game
+
+        // console.log('this.game.customTileArray', g.customTileArray)
+
+        var customTile = g.customTileArray || [
             '................',
             '................',
             '................',
@@ -62,7 +65,6 @@ class TileMap extends Phaser.State {
             '................',
             '................'
         ];
-
 
         var customShip = [
             '......0330......',

@@ -1,8 +1,8 @@
 
 //  Dimensions
 var previewSize = 6;
-var spriteWidth = 8;
-var spriteHeight = 8;
+var spriteWidth = 16;
+var spriteHeight = 16;
 
 //  UI
 var ui;
@@ -630,6 +630,10 @@ class TileBuilder extends Phaser.State {
         }
 
         console.log(output);
+
+        var g: any = this.game
+
+        g.customTileArray = src;
 
         this.game.state.start('map');
 
