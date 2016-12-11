@@ -179,7 +179,6 @@ class TileBuilder extends Phaser.State {
             'DDDDDDDDDD'
         ];
 
-    
         this.game.create.texture('arrow', arrow, 2);
         this.game.create.texture('plus', plus, 3);
         this.game.create.texture('minus', minus, 3);
@@ -631,6 +630,8 @@ class TileBuilder extends Phaser.State {
         }
 
         console.log(output);
+
+        this.game.state.start('map');
 
         saveText.alpha = 1;
         this.game.add.tween(saveText).to({ alpha: 0 }, 2000, "Linear", true);

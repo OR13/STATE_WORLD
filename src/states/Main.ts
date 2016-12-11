@@ -3,8 +3,6 @@
  * In this simple example we're jst displaying a Phaser logo.
  */
 
-
-
 class Main extends Phaser.State {
 
     public create(): void {
@@ -14,7 +12,7 @@ class Main extends Phaser.State {
 
         setTimeout(() => {
             this.game.state.start('map');
-        }, 3 * 1000)
+        }, .5 * 1000)
     }
 }
 

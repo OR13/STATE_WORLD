@@ -21,7 +21,7 @@ class Loader extends Phaser.State {
     public create(): void {
         setTimeout(() =>{
             this.game.state.start('main');
-        }, 1 * 1000)
+        }, .5 * 1000)
 
     }
 }
