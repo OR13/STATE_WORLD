@@ -30,3 +30,17 @@
 
 Hot Module Replacement doesn't really work with Phaser, so that isn't enabled by default when
 starting a dev server.
+
+
+
+#### Roadmap
+
+- Ignore Custom Tiles, Build Sprites First.
+- save and restore state when transitioning from map to tile.
+- implement resources
+- add health and attacking
+- add basic ship ai
+- implement random map generation
+- implement wormhole concept
+- implement catelogue
+- color based resources...
